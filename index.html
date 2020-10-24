@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 08</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/employee-management.js"></script>
+</head>
+
+<body>
+    <main class="container">
+        <h2>Employee Management System</h2>
+        <section>
+            <h3>Add New Employee</h3>
+            <form action="#" id="newEmpMngtForm">
+                <div class="new-form-group">
+                    <label for="name">*Name:</label>
+                    <input type="text" name="name">
+                    <span class="error hide">Error</span>
+                </div>
+
+                <div class="new-form-group">
+                    <label for="title">*Title:</label>
+                    <input type="text" name="title">
+                    <span class="error hide">Error</span>
+                </div>
+
+                <div class="new-form-group">
+                    <label for="extension">*Extension:#</label>
+                    <input type="text" name="extension">
+                    <span class="error hide">Error</span>
+                </div>
+
+                <button id="addEmployeeBtn">Add</button>
+            </form>
+        </section>
+
+        <section>
+            <h4>Showing <u><i><span id="employeeCount" /></i></u> employees</h4>
+            <table id="employeesTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Title</th>
+                        <th>Extension</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>
